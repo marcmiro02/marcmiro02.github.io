@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcd8f4;
+    color: #333;
+    padding-top: 150px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 2px -2px gray;
+    position: fixed;  /* Fa que el header es mantingui fix a la part superior */
+    top: 0;
+    left: 0;
+    width: 100%;  /* S'assegura que l'header ocupi tota l'amplada */
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff69b4;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 210px;
+    height: 280px;
+    border-radius: 50%;
+    border: 3px solid #ff69b4;
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las habilidades se muevan a una nueva fila cuando no haya más espacio */
+    justify-content: space-around;
+    gap: 20px; /* Añade espacio entre cada habilidad */
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+    flex-basis: 20%; /* Hace que cada habilidad ocupe aproximadamente el 20% del ancho del contenedor */
+    max-width: 150px; /* Establece un ancho máximo para cada habilidad */
+    min-width: 100px; /* Ancho mínimo para asegurarse de que las habilidades no se vuelvan demasiado pequeñas */
+}
+
+.skill i {
+    font-size: 40px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Fa que el footer es col·loqui després del contingut */
+    width: 100%;
+}
+
+
+p {
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #ff69b4;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .skill {
+        flex-basis: 45%; /* Reduce el tamaño para pantallas más pequeñas */
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        flex-basis: 90%; /* En pantallas móviles ocupa casi toda la fila */
+        max-width: 100%;
+    }
+}
+
+/* Estilo del botón de descarga de CV */
+.download-cv-btn {
+    align-self: flex-end; /* Alinea el botó a la dreta dins de la secció */
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px; /* Afegir espai entre l'element anterior i el botó */
+}
+
+.download-cv-btn:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+section#about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+
+video {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.titol-principal {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    color: #ff69b4;
+}
+
+.fotillo-discard {
+    width: 5%;
+    position: absolute;
+    left: 40px;  /* Posiciona la imatge a l'esquerra */
+    top: 46%;
+    transform: translateY(-50%);  /* Centra verticalment la imatge */
+}
+
+.text-about {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titols-seccio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+

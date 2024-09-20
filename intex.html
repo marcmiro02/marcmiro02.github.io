@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaNenetaMaquíssima</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Iconos FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#about">
+            <img src="Chucky_Cardaway.webp" alt="Foto del tito Discard" class="fotillo-discard">
+        </a>
+        <h1 class="titol-principal">LaNenetaMaquíssima</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#skills">Habilitats</a></li>
+                <li><a href="#projects">Projectes</a></li>
+                <li><a href="#testimonials">Testimonis</a></li>
+                <li><a href="#contact">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2 class="titols-seccio">Sobre mi</h2>
+        <p class="text-about">Hola, sóc LaNenetaMaca, un desenvolupador apassionat per la creació de solucions innovadores i eficients.</p>
+        <img src="https://image.tensorartassets.com/cdn-cgi/image/anim=false,plain=false,w=2048,f=jpeg,q=85/model_showcase/678426106564572163/c9e94245-866d-0487-e372-3d594df61932.png" alt="Una foto meva" class="profile-pic">
+        
+        <a class="download-cv-btn" href="https://drive.google.com/uc?export=download&id=1BRefSeVBDGgHarZrxxGqW_K16tH6h-7K" title="CV LaNenetaMaca" target="_blank">
+            <i class="fas fa-file-signature"></i>Descarregar CV
+        </a>
+    </section>
+    
+
+    <section id="skills">
+        <h2 class="titols-seccio">Habilitats</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-php"></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-c"></i>
+                <p>C</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-microchip"></i> <!-- Icono representant ensamblador -->
+                <p>Ensamblador</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-terminal"></i> <!-- Bash pot usar el icono de terminal -->
+                <p>Bash</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <h2 class="titols-seccio">Projectes</h2>
+        <p>Aquests són alguns dels meus projectes.</p>
+        <ul>
+            <li><a href="https://github.com/marcmiro02/AnselmosUrbanOdyssey" target="_blank">AnselmosUrbanOdyssey</a></li><br>
+            <li><a href="https://github.com/marcmiro02/joc_preguntes" target="_blank">Joc de preguntes</a></li><br>
+            <li><a href="https://github.com/marcmiro02/DAMTASY" target="_blank">DAMTASY</a></li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="titols-seccio">Testimonis</h2>
+        <blockquote>"Treballar amb LaNenetaMaca ha estat una experiència increïble. Té moltíssima més pipolianeïtat que el Cmax el C's." - mmux3r</blockquote>
+        <blockquote>"Té més sucació que el propi Son Goku." - MartiniDiFlow</blockquote>
+    </section>
+
+    <section id="contact">
+        <h2 class="titols-seccio">Contacte</h2>
+        <p>E-mail: <a href="mailto:marcmiro2002@gmail.com">marcmiro2002@gmail.com</a></p>
+        <p>Telèfon: 608 29 81 29</p>
+        <p>Però la pregunta ja la saps:</p>
+        <p>"Podrà en Son Goku salvar la Terra?"</p>
+    </section>
+
+    <section>
+        <video controls autoplay loop muted>
+            <source src="Discard.mp4" type="video/mp4">
+            El teu navegador no suporta el vídeo.
+        </video>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LaNenetaMaca. Tots els drets reservats.</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+    
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (scrollTop > lastScrollTop) {
+                // Scroll cap avall - amaguem l'header
+                header.style.top = `-${header.offsetHeight}px`;  // Amaga l'header movent-lo cap a dalt
+            } else {
+                // Scroll cap amunt - mostrem l'header
+                header.style.top = '0';
+            }
+    
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    
+</body>
+</html>
