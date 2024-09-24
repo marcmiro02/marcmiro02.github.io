@@ -9,32 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-
-<!-- Hero Section -->
-<section id="hero">
-    <div class="hero-content">
-        <h1>Marc Miró Galceran
-            <span>Desenvolupador de Software</span>
-        </h1>
-        <div class="btn-icons-wrapper">
-            <a href="#" class="download-cv-btn">
-                <i class="fas fa-download"></i> Descarregar CV
-            </a>
-            <div class="social-icons">
-                <a href="https://github.com/marcmiro02" target="_blank">
-                    <img src="assets/img/logotipo-de-github.png" alt="GitHub logo" class="logo-github">
-                </a>
-                <a href="https://www.instagram.com/yourprofile/" target="_blank">
-                    <img src="assets/img/5ecec6ef73e4440004f09e75.png" alt="Instagram logo" class="logo-instagram">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
+   
     <header>
         <nav>
             <ul>
@@ -47,6 +22,31 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Marc Miró Galceran
+                <span>Desenvolupador de Software</span>
+            </h1>
+            <div class="btn-icons-wrapper">
+                <a href="#" class="download-cv-btn">
+                    <i class="fas fa-download"></i> Descarregar CV
+                </a>
+                <div class="social-icons">              
+                    <a href="https://www.linkedin.com/in/marc-mir%C3%B3-galceran-5a4545240/" target="_blank">
+                        <img src="assets\img\logos\linkedin_logo_icon_186926.png" alt="LinkedIn logo" class="logo-linkedin">
+                    </a>
+                    <a href="https://github.com/marcmiro02" target="_blank">
+                        <img src="assets\img\logos\logotipo-de-github.png" alt="GitHub logo" class="logo-github">
+                    </a>
+                    <a href="https://www.instagram.com/marc_miro02/" target="_blank">
+                        <img src="assets/img/logos/ig.png" alt="Instagram logo" class="logo-instagram">
+                    </a>            
+                    </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Resto del contenido -->
     <section id="about">
         <div class="about-container">
@@ -58,7 +58,7 @@
                 </a>
             </div>
             <div class="about-img">
-                <img src="assets/img/Imagen de WhatsApp 2024-09-20 a las 09.47.47_7c786ef8.jpg" alt="Marc Miró Galceran" class="profile-pic">
+                <img src="assets\img\selfie.jpg" alt="Marc Miró Galceran" class="profile-pic">
             </div>
         </div>
     </section>
@@ -66,69 +66,84 @@
     
     <section id="skills">
         <h2 class="titols-seccio">Habilitats</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <i class="fab fa-html5"></i>
-                <p>HTML5</p>
+        <div class="skills-wrapper">
+            <!-- Contenedor para lenguajes de programació -->
+            <div class="skill-container" id="languages">
+                <h3>Llenguatges de programació</h3>
+                <div class="logos-container">
+                    <img src="assets\img\logos_lngs\C_Logo.png" alt="C Logo" class="logo">
+                    <img src="assets\img\logos_lngs\cpp.png" alt="C++ Logo" class="logo">
+                    <img src="assets\img\logos_lngs\csharp.png" alt="C# Logo" class="logo">
+                    <img src="assets\img\logos_lngs\java.png" alt="Java Logo" class="logo">
+                    <img src="assets\img\logos_lngs\python.png" alt="Python Logo" class="logo">
+                    <img src="assets\img\logos_lngs\html.png" alt="HTML Logo" class="logo">
+                    <img src="assets\img\logos_lngs\JavaScript-logo.png" alt="JavaScript Logo" class="logo">
+                    <img src="assets\img\logos_lngs\css.png" alt="CSS logo" class="logo">
+                    <img src="assets\img\logos_lngs\php.png" alt="PHP Logo" class="logo">
+                    <img src="assets\img\logos_lngs\sql.png" alt="SQL Logo" class="logo">
+                    <img src="assets\img\logos_lngs\ensamblador.png" alt="Ensambladoor Logo" class="logo">
+                    <img src="assets\img\logos_lngs\bash2.webp" alt="Bash Logo" class="logo">
+                    
+                </div>
             </div>
-            <div class="skill">
-                <i class="fab fa-css3-php"></i>
-                <p>PHP</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-js-square"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-c"></i>
-                <p>C</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-code"></i>
-                <p>C++</p>
-            </div>
-            <div class="skill">
-                <i class="fab fa-java"></i>
-                <p>Java</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-microchip"></i> <!-- Icono representant ensamblador -->
-                <p>Ensamblador</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-terminal"></i> <!-- Bash pot usar el icono de terminal -->
-                <p>Bash</p>
+    
+            <!-- Contenedor para tecnologías -->
+            <div class="skill-container" id="technologies">
+                <h3>Tecnologies</h3>
+                <div class="logos-container">
+                    <img src="assets\img\logos_lngs\git.png" alt="Git Logo" class="logo-tech">
+                    <img src="assets\img\logos\logotipo-de-github.png" alt="GitHub Logo" class="logo-tech">
+                    <img src="assets\img\logos_lngs\terminal 2.png" alt="Terminal Logo" class="logo-tech">
+                    <img src="assets\img\logos_lngs\docker.png" alt="Docker Logo" class="logo">
+                    <img src="assets\img\logos_lngs\mysql-removebg-preview.png" alt="MySQL Logo" class="logo-tech">
+                    <img src="assets\img\logos_lngs\mongodb_original_wordmark_logo_icon_146425.webp" alt="MongoDB Logo" class="logo-tech">
+                    <img src="assets\img\logos_lngs\unity.png" alt="Unity Logo" class="logo-tech">
+                    <img src="assets\img\logos_lngs\tajima-removebg-preview.png" alt="Tajima Logo" class="logo-tech">
+                </div>
             </div>
         </div>
     </section>
     
     <section id="projects">
         <h2 class="titols-seccio">Projectes</h2>
-        <p>Aquests són alguns dels meus projectes.</p>
-        <ul>
-            <li><a href="https://github.com/marcmiro02/AnselmosUrbanOdyssey" target="_blank">AnselmosUrbanOdyssey</a></li><br>
-            <li><a href="https://github.com/marcmiro02/joc_preguntes" target="_blank">Joc de preguntes</a></li><br>
-            <li><a href="https://github.com/marcmiro02/DAMTASY" target="_blank">DAMTASY</a></li>
-        </ul>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-overlay">
+                    <a href="https://github.com/marcmiro02/AnselmosUrbanOdyssey" target="_blank" class="project-button">Visitar Projecte</a>
+                </div>
+                <div class="project-content">
+                    <h3>AnselmosUrbanOdyssey</h3>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-overlay">
+                    <a href="https://github.com/marcmiro02/joc_preguntes" target="_blank" class="project-button">Visitar Projecte</a>
+                </div>
+                <div class="project-content">
+                    <h3>Joc de preguntes</h3>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-overlay">
+                    <a href="https://github.com/marcmiro02/DAMTASY" target="_blank" class="project-button">Visitar Projecte</a>
+                </div>
+                <div class="project-content">
+                    <h3>DAMTASY</h3>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section id="testimonials">
-        <h2 class="titols-seccio">Testimonis</h2>
-        <blockquote>"Treballar amb LaNenetaMaca ha estat una experiència increïble. Té moltíssima més pipolianeïtat que el Cmax el C's." - mmux3r</blockquote>
-        <blockquote>"Té més sucació que el propi Son Goku." - MartiniDiFlow</blockquote>
-    </section>
-
+    
     <section id="contact">
         <h2 class="titols-seccio">Contacte</h2>
-        <p>E-mail: <a href="mailto:marcmiro2002@gmail.com">marcmiro2002@gmail.com</a></p>
-        <p>Telèfon: 608 29 81 29</p>
-        <p>Però la pregunta ja la saps:</p>
-        <p>"Podrà en Son Goku salvar la Terra?"</p>
+        <div class="contact-info">
+            <p>E-mail: <a href="mailto:marcmiro2002@gmail.com">marcmiro2002@gmail.com</a></p>
+            <p>Telèfon: 608 29 81 29</p>
+            <p>Però la pregunta ja la saps:</p>
+            <p class="goku-question">"Podrà en Son Goku salvar la Terra?"</p>
+        </div>
     </section>
+    
 
     <footer>
         <p>&copy; 2024 LaNenetaMaca. Tots els drets reservats.</p>
