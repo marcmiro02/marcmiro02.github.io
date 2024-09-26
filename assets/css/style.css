@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Encabezado (Header) */
 header {
     position: fixed;
     top: 0;
@@ -45,16 +43,14 @@ header nav ul li a:hover {
     color: #d86f8f;
 }
 
-/* Sección con fondo degradado */
 section {
-    background: linear-gradient(to right, #3f0e2b, #9b2a3b); /* Degradado granate y morado */
+    background: linear-gradient(to right, #3f0e2b, #9b2a3b);
     color: white;
     padding: 60px 20px;
     text-align: center;
     min-height: 70vh;
 }
 
-/* Estilos para el Hero Section */
 #hero {
     height: 100vh;
     display: flex;
@@ -90,7 +86,7 @@ section {
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra más ligera */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     animation: textPopUp 1.5s ease-out;
 }
 
@@ -108,7 +104,7 @@ section {
 #hero h1 span {
     display: block;
     font-size: 3.2rem;
-    color: #ffdf5d; /* Dorado plano */
+    color: #ffdf5d;
 }
 
 @keyframes fadeInOnce {
@@ -127,43 +123,39 @@ section {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    gap: 15px; /* Espacio entre el botón y los iconos */
+    gap: 15px;
 }
 
-/* Estilos para el botón "Descarregar CV" */
 .download-cv-btn {
     display: inline-block;
-    background: linear-gradient(135deg, #8f0c29, #4e0f5e); /* Degradado en el botón */
+    background: linear-gradient(135deg, #8f0c29, #4e0f5e);
     color: white;
     padding: 14px 35px;
     border-radius: 40px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3rem;
-    transition: transform 0.3s ease, background 0.3s ease; /* Simplificado */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra más suave */
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     margin-top: -3px;
 }
 
 .download-cv-btn:hover {
-    background: linear-gradient(135deg, #4e0f5e, #8f0c29); /* Invertimos los colores en hover */
-    transform: scale(1.05); /* Efecto de agrandado suave */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa en hover */
+    background: linear-gradient(135deg, #4e0f5e, #8f0c29);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .download-cv-btn i {
     margin-right: 10px;
 }
 
-/* Estilos para los iconos sociales */
-/* Estilos para los iconos sociales */
 .social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px; /* Espacio entre los iconos */
+    gap: 6px;
     margin-left: 16px;
-
 }
 
 .social-icons a {
@@ -171,31 +163,28 @@ section {
 }
 
 .social-icons img:hover {
-    transform: scale(1.2); /* Efecto de zoom */
+    transform: scale(1.2);
 }
 
-/* Estilos para el logo de GitHub */
 .logo-github {
-    width: 35px;  /* Ajusta el tamaño del logo de GitHub */
-    height: auto; /* Mantiene la proporción */
+    width: 35px;
+    height: auto;
     transition: transform 0.3s ease;
     margin-left: 8.5px;
 }
 
-/* Estilos para el logo de Instagram */
 .logo-instagram {
-    width: 53px;  /* Ajusta el tamaño del logo de Instagram */
-    height: auto; /* Mantiene la proporción */
+    width: 53px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
 .logo-linkedin {
-    width: 35px;  /* Ajusta el tamaño del logo de LinkedIn */
-    height: auto; /* Mantiene la proporción */
+    width: 35px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
-/* About Section */
 #about {
     display: flex;
     justify-content: center;
@@ -249,10 +238,9 @@ section {
     transform: scale(1.05);
 }
 
-/* Estilos para la sección de habilidades */
 #skills {
     padding: 60px 20px;
-    background-color: #3f0e2b; /* Mismo fondo que el resto para mantener coherencia */
+    background-color: #3f0e2b;
     color: white;
     text-align: center;
 }
@@ -267,10 +255,9 @@ section {
     gap: 30px;
 }
 
-/* Contenedores para lenguajes y tecnologías */
 .skill-container {
     width: 45%;
-    background-color: rgba(255, 255, 255, 0.15); /* Blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.15);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -288,41 +275,39 @@ section {
 .logos-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;  /* Distribuir de forma uniforme */
+    justify-content: space-evenly;
     align-items: center;
-    gap: 15px; /* Añadir espacio entre los logos */
-    padding: 20px; /* Espacio interior en el contenedor */
-    
+    gap: 15px;
+    padding: 20px;
 }
 
 .logo {
-    max-width: 50px;  /* Tamaño máximo */
-    height: auto;  /* Mantiene la proporción */
-    object-fit: contain; /* Asegura que no se distorsionen las imágenes */
-    filter:brightness(0.9); /* Morado intenso */
-    transition: transform 0.3s ease; /* Transición más rápida */
-    margin: 10px;  /* Espaciado entre imágenes */
+    max-width: 50px;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.9);
+    transition: transform 0.3s ease;
+    margin: 10px;
 }
 
 .logo:hover {
-    filter: none; /* Vuelve al color original al hacer hover */
-    transform: scale(1.1); /* Efecto de zoom suave */
+    filter: none;
+    transform: scale(1.1);
 }
 
 .logo-tech {
-    max-width: 63px;  /* Tamaño máximo */
-    height: auto;  /* Mantiene la proporción */
-    object-fit: contain; /* Asegura que no se distorsionen las imágenes */ /* Morado intenso */
-    transition: transform 0.3s ease; /* Transición más rápida */
-    margin: 10px;  /* Espaciado entre imágenes */
+    max-width: 63px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    margin: 10px;
 }
 
 .logo-tech:hover {
-    filter: none; /* Vuelve al color original al hacer hover */
-    transform: scale(1.1); /* Efecto de zoom suave */
+    filter: none;
+    transform: scale(1.1);
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .skills-wrapper {
         flex-direction: column;
@@ -334,7 +319,6 @@ section {
     }
 }
 
-/* Footer */
 footer {
     padding: 20px 0;
     background-color: #333;
@@ -347,7 +331,6 @@ footer p {
     font-size: 1rem;
 }
 
-/* Responsividad */
 @media screen and (max-width: 768px) {
     #hero h1 {
         font-size: 3rem;
@@ -355,7 +338,7 @@ footer p {
 
     .btn-icons-wrapper {
         flex-direction: column;
-        gap: 20px; /* Mayor espacio en dispositivos pequeños */
+        gap: 20px;
     }
 
     .social-icons img {
@@ -377,126 +360,102 @@ footer p {
     }
 }
 
-/* Sección de Proyectos */
 #projects {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
 
-/* Estilos para la cuadrícula de proyectos */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cuadrícula responsiva */
-    gap: 20px; /* Espacio entre tarjetas */
-    max-width: 1200px; /* Ancho máximo de la cuadrícula */
-    margin: 0 auto; /* Centrar la cuadrícula en la página */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 25px;
 }
 
-/* Estilo de cada tarjeta de proyecto */
 .project-card {
     position: relative;
-    overflow: hidden; /* Esconde el contenido desbordado */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra inicial */
-    transition: transform 0.3s, box-shadow 0.3s; /* Efectos de transformación y sombra */
-    background-color: #fff; /* Fondo blanco para las tarjetas */
-    color: #333; /* Color de texto */
-    padding: 20px; /* Espaciado interior */
-    text-align: center; /* Centrar texto */
-    width: 300px; /* Ancho fijo para todas las tarjetas */
-    height: 50px; /* Altura fija para todas las tarjetas */
-    display: flex; /* Usar flex para centrar contenido */
-    flex-direction: column; /* Permitir que el contenido se apile verticalmente */
-    justify-content: center; /* Centrar verticalmente */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* Efecto hover para la tarjeta */
 .project-card:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo del overlay */
 .project-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Comienza oculto */
-    transition: opacity 0.3s; /* Suave transición de opacidad */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-/* Oculta el contenido del proyecto */
 .project-content {
-    opacity: 1; /* Comienza visible */
-    transition: opacity 0.3s; /* Transición de opacidad */
-    position: relative; /* Para asegurar que el contenido esté bien posicionado */
-    z-index: 1; /* Asegura que el contenido esté por encima del overlay */
+    opacity: 1;
+    transition: opacity 0.3s;
+    position: relative;
+    z-index: 1;
 }
 
-/* Muestra el overlay y oculta el contenido al pasar el mouse */
 .project-card:hover .project-overlay {
-    opacity: 1; /* Aparece al pasar el mouse */
+    opacity: 1;
 }
 
 .project-card:hover .project-content {
-    opacity: 0; /* Oculta el contenido al pasar el mouse */
+    opacity: 0;
 }
 
-/* Estilo del botón del proyecto */
 .project-button {
-    font-size: 1.2rem; /* Tamaño del texto */
-    font-weight: bold; /* Negrita para el texto */
-    color: #ffdf5d; /* Color dorado */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffdf5d;
     text-decoration: none;
-    padding: 10px 20px; /* Espaciado interior del botón */
-    background-color: #3f0e2b; /* Color de fondo del botón */
-    border-radius: 25px; /* Bordes redondeados del botón */
-    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
-    position: relative; /* Asegura que el botón esté correctamente posicionado */
-    z-index: 2; /* Coloca el botón por encima del overlay */
+    padding: 10px 20px;
+    background-color: #3f0e2b;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    z-index: 2;
 }
 
 .project-button:hover {
-    background-color: #d86f8f; /* Color del botón al pasar el mouse */
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño del botón al pasar el mouse */
+    background-color: #d86f8f;
+    transform: scale(1.05);
 }
 
-/* Estilo del contenido del proyecto */
 .project-content h3 {
-    font-size: 1.5rem; /* Tamaño del título */
-    margin: 10px 0; /* Espacio alrededor del título */
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
-/* Estilos para el encabezado */
 .titols-seccio {
-    text-align: center; /* Centrar el encabezado */
-    font-size: 2.5rem; /* Ajustar el tamaño de la fuente */
-    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 #projects p {
-    text-align: center; /* Centrar el párrafo */
-    font-size: 1.1rem; /* Ajustar el tamaño de la fuente */
-    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
