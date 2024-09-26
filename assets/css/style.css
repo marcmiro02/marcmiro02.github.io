@@ -487,49 +487,8 @@ footer p {
     margin-bottom: 20px; /* Espacio debajo del párrafo */
 }
 
-/* Sección de Contacto */
-#contact {
-    text-align: center; /* Centrar el texto */
-    padding: 40px 20px; /* Espaciado interno */
-    margin: 40px auto; /* Espacio exterior y centrado */
-    max-width: 800px; /* Ancho máximo para la sección */
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
 
-/* Estilo del encabezado */
-.titols-seccio {
-    font-size: 2.5rem; /* Tamaño del encabezado */
-    color: #3f0e2b; /* Color del texto del encabezado */
-    margin-bottom: 20px; /* Espacio debajo del encabezado */
-}
 
-/* Estilos para la información de contacto */
-#contact p {
-    font-size: 1.2rem; /* Tamaño de texto estándar */
-    line-height: 1.5; /* Mejor legibilidad */
-    color: #333; /* Color de texto */
-}
-
-/* Estilo del enlace de correo */
-#contact a {
-    color: #ffdf5d; /* Color dorado */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s; /* Transición suave */
-}
-
-#contact a:hover {
-    color: #d86f8f; /* Color al pasar el ratón */
-}
-
-/* Estilo para la pregunta de Goku */
-.goku-question {
-    font-style: italic; /* Texto en cursiva */
-    margin-top: 20px; /* Espacio arriba */
-    font-weight: bold; /* Negrita */
-    color: #3f0e2b; /* Mismo color que el encabezado */
-}
 
 
 
